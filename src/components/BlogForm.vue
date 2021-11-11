@@ -1,4 +1,4 @@
-<template>
+<template >
   <form @submit.prevent="create()">
     <input
       type="text"
@@ -24,6 +24,7 @@
 
 
 <script>
+import { ref } from "@vue/reactivity";
 import { blogsService } from "../services/BlogsService";
 import { logger } from "../utils/Logger";
 import Pop from "../utils/Pop";
