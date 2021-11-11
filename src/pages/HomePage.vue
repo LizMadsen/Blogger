@@ -1,8 +1,13 @@
 <template>
   <div>
-    <Modal>
+    <button
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#BlogForm"
+    ></button>
+    <Modal id="BlogForm">
       <template #modal-title> What's up? </template>
-      <template #modal-body> </template>
+      <template #modal-body> <BlogForm /> </template>
     </Modal>
   </div>
   <div>

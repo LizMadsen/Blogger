@@ -8,6 +8,12 @@ class BlogsService {
         logger.log(res.data)
         AppState.blogs = res.data
     }
+    async create(data){
+        logger.log(data)
+        const res = await blogApi.post('api/blogs', data)
+        logger.log(res.data)
+        AppState.blogs = res.data
+    }
 }
 
 

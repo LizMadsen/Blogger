@@ -1,4 +1,6 @@
-<template></template>
+<template>
+  <div class="component"></div>
+</template>
 
 
 <script>
