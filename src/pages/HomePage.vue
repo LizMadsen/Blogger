@@ -1,23 +1,26 @@
 <template>
-  <div
-    class="
-      row
-      home
-      flex-grow-1
-      d-flex
-      flex-column
-      align-items-center
-      justify-content-center
-    "
-  >
-    <div class="col-8 justify-content-center">
-      <div class="card elevation-2 rounded m-3">
-        <div class="card-body" v-for="b in blog" :key="b.id">
-          <Blog />
-        </div>
+  <div>
+    <Search />
+  </div>
+  <center>
+    <div
+      class="
+        row
+        home
+        flex-grow-1
+        d-flex
+        flex-column
+        align-items-center
+        m-0
+        container-fluid
+        pt-4
+      "
+    >
+      <div v-for="b in blogs" :key="b.id">
+        <Blog :blog="b" />
       </div>
     </div>
-  </div>
+  </center>
 </template>
 
 <script>
@@ -38,6 +41,7 @@ export default {
     });
     return {
       blogs: computed(() => AppState.blogs),
+      name: "Home",
     };
   },
 };
