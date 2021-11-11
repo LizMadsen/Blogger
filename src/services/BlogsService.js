@@ -1,6 +1,6 @@
 import { AppState } from "../AppState"
 import { logger } from "../utils/Logger"
-import { api } from "./AxiosService"
+import { blogApi } from "./AxiosService"
 
 class BlogsService {
     async getAll() {
