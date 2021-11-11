@@ -1,21 +1,19 @@
 <template>
-  <div class="component">
-    <div class="col-8 justify-content-center">
-      <div class="card elevation-2 rounded m-2">
-        <p>
-          {{ blog.title }}
-        </p>
-        <p>
-          {{ blog.body }}
-        </p>
-        <p>
-          <img
-            class="imgFit"
-            :src="blog.creator.picture"
-            alt="Blog Post Picture"
-          />
-        </p>
-      </div>
+  <div class="col-8 justify-content-center">
+    <div class="card elevation-2 rounded m-2">
+      <p>
+        {{ blog.title }}
+      </p>
+      <p>
+        {{ blog.body }}
+      </p>
+      <p>
+        <img
+          class="imgFit"
+          :src="blog.creator.picture"
+          alt="Blog Post Picture"
+        />
+      </p>
     </div>
   </div>
 </template>

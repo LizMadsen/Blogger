@@ -1,5 +1,11 @@
 <template>
   <div>
+    <Modal>
+      <template #modal-title> What's up? </template>
+      <template #modal-body> </template>
+    </Modal>
+  </div>
+  <div>
     <Search />
   </div>
   <center>
